@@ -1,0 +1,134 @@
+<html>
+    <head>
+      <title> My webpage </title>
+      <link rel="stylesheet"  type="text/css" href="style.css" />
+    </head>
+
+      <body>
+        <div id="container">
+          <div id="header">
+            <h1> Final project </h1>
+          </div>
+             <div id="content">
+               <div id="nav">
+                     <h2>Navigation</h2>
+                            <ul>
+                                 <li> <a href="index.html">Home</a> </li>
+                                 <li> <a href="Aboutcontents.html">About</a> </li>
+                            </ul>
+               </div>
+                 <div id="main">
+                   <h2> My Final project </h2>
+                      <p> The idea behind my project is to create a automatic box that will have an automated opening and closing lid function , on the command of a push button. </p>
+                      <hr/>
+                    <h3> Process of designing </h3>
+                       <ol>
+                         <li> Planning and design thinking </li>
+                         <li> Designing the box and the varoous parts required using fusion 360 </li>
+                         <li> 3D printing and 2D computed controlled machining of the parts </li>
+                         <li> Creating the electronics (PCB board) </li>
+                         <li> Interface and programming </li>
+                         <li> Assembling everything together </li>
+                       </ol>
+                       <hr/>
+                       <h3> Components needed for the Project</h4>
+                       <ul>
+                         <li> 12 mm thickness wood - For pieces of the Box </li>
+                         <li> 5mm wood for the box lid</li>
+                         <li> Attiny 85 board</li>
+                         <li> momentary push button - input </li>
+                         <li> stepper motor - output</li>
+                         <li> ISP programmer </li>
+                         <li> Rack and pinion </li>
+                         <li> motor stand </li>
+                       </ul>
+                             <table>
+                               <tr> <h4> Fusion 360 Design </h4>
+                                 <td> <img <img src="fusion360box" height = "200px" width = "200px"/> </td>
+                                 <td> This is an image of the Box that i have created.</td>
+                               </tr>
+                               <tr>
+                                 <td> <img <img src="racknpinion" height = "200px" width = "200px"/> </td>
+                                 <td> This is an image of the rack and pinion gear i have created to provide mechanism for the automated opening and closing of the lid .</td>
+                               </tr>
+                               <tr>
+                                 <td> <img <img src="motorstand" height = "200px" width = "200px"/> </td>
+                                 <td> This is an image of how the stand would look like , to hold the motor in place.</td>
+                               </tr>
+                             </table>
+                             <hr/ >
+                              <h4> Fusion eagle PCB board schematic </h4>
+                                         <table>
+                                           <tr>
+                                             <td> <img <img src="pcblayout" height = "200px" width = "200px"/> </td>
+                                             <td> <p> This is the image of the schematic of my tiny 85 board i have created using the eagle software. </p> </td>
+                                           </tr>
+                                           <tr>
+                                             <td> <img <img src="pcbschematic" height = "200px" width = "200px"/> </td>
+                                           </tr>
+                                           <p> Once the designing has been done , i exported the milling layer and the traces layer for the outline and traces of the board, to 'MODS' to generate the gcode file required for the cutting. </p>
+                                           <tr>
+                                             <td> <img <img src="tiny85milling.jpeg" height = "200px" width = "200px"/> </td>
+                                             <td> <p> milling of my tiny85 board </p> </td>
+                                           </tr>
+                                         </table>
+                              <hr />
+                                <h4> Computer Controlled Machining </h4>
+                                <p> With my design i have created in fusion 360 , i export it into the software Vcarve pro' to generate the toolpath needed to cut the pieces of my box </p>
+                                <table>
+                                  <tr>
+                                    <td> <img <img src="WhatsApp Image 2021-02-27 at 10.30.43 AM.jpeg" height = "200px" width = "200px"/> </td>
+                                    <td> <p> Using Vcarve pro. Once file has been generated , it is ready to cut.</p> </td>
+                                  </tr>
+                                  <tr>
+                                    <td> <img <img src="cnccutting1.jpeg" height = "200px" width = "200px"/> </td>
+                                    <td> <p> These are some images of the process.</p> </td>
+                                  </tr>
+                                  <tr>
+                                    <td> <img <img src="cnccutting1.jpeg" height = "200px" width = "200px"/> </td>
+                                  </tr>
+                                <hr/ >
+                                <h4> Programming and interface </h4>
+                                <p> Using my ISP board , i simply connected my attiny 85 board to the usb port of my laptop and use 'Arduino' to programme the board.
+                                <table>
+                                  <tr>
+                                    <td> <img <img src="WhatsApp Image 2021-02-27 at 12.35.35 PM.jpeg" height = "200px" width = "200px"/> </td>
+                                  </tr>
+                                  <tr>
+                                    <td> <img <img src="programme1" height = "200px" width = "200px"/> </td>
+                                    <td> <p> Here's the programme for this project. </p> </td>
+                                  </tr>
+                                  <tr>
+                                    <td> <img <img src="programme2" height = "200px" width = "200px"/> </td>
+                                  </tr>
+                                  <tr>
+                                    <td> <img <img src="programme3" height = "200px" width = "200px"/> </td>
+                                  </tr>
+                                  <tr>
+                                    <td> <img <img src="programme4" height = "200px" width = "200px"/> </td>
+                                  </tr>
+                                  <tr>
+                                    <td> <img <img src="programme5" height = "200px" width = "200px"/> </td>
+                                  </tr>
+                              </table>
+                              <hr/>
+                              <h4> Final Product </h4>
+                              <table>
+                                <tr>
+                                  <td> <img <img src="finalproduct.jpeg" height = "400px" width = "400px"/> </td>
+                                  <td> <p> Here's the final product after assembling everything together </p> </td>
+                                </tr>
+                                <tr>
+                                  <td> <img <img src="finalproduct.jpeg" height = "400px" width = "400px"/> </td>
+                                <p> refer to the slide and video page for the the summary and video of my project </p>
+                            </table>
+                 </div>
+             </div>
+                <div id="footer">
+                   Copyright &copy; 2020 MasonGoh.
+                </div>
+        </div>
+
+      </body>
+
+</html>

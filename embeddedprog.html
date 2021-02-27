@@ -1,0 +1,76 @@
+<html>
+    <head>
+      <title> Embedded Porgramming </title>
+      <link rel="stylesheet"  type="text/css" href="style.css" />
+    </head>
+
+      <body>
+        <div id="container">
+          <div id="header">
+
+          </div>
+             <div id="content">
+               <div id="nav">
+                     <h2>Navigation</h2>
+                            <ul>
+                                 <li> <a href="index.html">Home</a> </li>
+                                 <li> <a href="Aboutcontents.html">About</a> </li>
+                                 <li> <a href="">contacts</a> </li>
+                            </ul>
+               </div>
+                 <div id="main">
+                   <h1> ISP programmer programming </h1>
+                     <p>  Here's how to use AVRdude in terminal to programme my ISP programmer </p>
+                   <hr/>
+                          <h3> Using AVRdude </h3>
+                             <p> Simply connect your ISP programmer to a programmed ISP which is plugged into the USB port of your device. </p>
+                             <p> Firstly , check that the ISP is connected and working by running the command "avrdude -p usbtiny -c t85".
+                             Once that is done, your ready to go! </P>
+
+
+                      <table>
+                          <tr>
+                            <td> <img src="makecommand" height = "200px" width = "200px"/> </td>
+                            <td> <p> Run the 'make' command </p> </td>
+                          </tr>
+                          <tr>
+                            <td> <img src="makeflashcommand" height = "200px" width = "200px"/> </td>
+                            <td>
+                              <p> Once the make command has been configured , run the 'make flash command'.</p>
+                            </td>
+                          </tr>
+                          <tr>
+                           <td> <img src="makefusescommand" height = "200px" width = "200px"/> </td>
+                           <td> <p> Lastly , run the 'make fuses command'. </p> </td>
+                          </tr>
+                          <tr>
+                            <td> <img src="makefusescommand2" height = "200px" width = "200px"/> </td>
+                          </tr>
+                         </table>
+                       <hr/ >
+                          <h2> Using ISP in Arduino </h2>
+                         <table>
+                           <tr>
+                             <td> <img src="arduino" height = "200px" width = "200px"/> </td>
+                             <td>
+                               <p> Firstly , search up for SpenceKonde's library and install it under 'Board's manager'. </p>
+                             </td>
+                           </tr>
+                           <tr>
+                            <td> <img src="arduinoisp" height = "200px" width = "200px"/> </td>
+                            <td> <p> Under tools , make sure that the board you have selected is the correct board you are using.</p>
+                            <p> Once that is done , make sure that the clock is either 8MHz or  1Mhz internal if you are using the tiny 25/45/85 board with no bootloader.
+                             <p>To burn the bootloader ,  we will have to go into Arduino and 'burn bootloader'. This will change the fuses to the appropriate setting. </p> </td>
+                           </tr>
+                          </table>
+
+                 </div>
+             </div>
+                <div id="footer">
+                   Copyright &copy; 2020 MasonGoh.
+                </div>
+        </div>
+
+      </body>
+
+</html>
